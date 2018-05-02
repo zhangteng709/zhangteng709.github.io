@@ -21,6 +21,21 @@
     </entry>
     
     <entry>
+      <title>iOS  检测内存泄漏的方式</title>
+      <link href="/2016/05/02/iOS-%E6%A3%80%E6%B5%8B%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E6%96%B9%E5%BC%8F/"/>
+      <url>/2016/05/02/iOS-%E6%A3%80%E6%B5%8B%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E6%96%B9%E5%BC%8F/</url>
+      <content type="html"><![CDATA[<h3 id="静态检测工具"><a href="#静态检测工具" class="headerlink" title="静态检测工具"></a>静态检测工具</h3><p>1.手动使用静态检测方法<br>    Command + shift + B<br>    或者点击<br>    <img src="/img/WX20180502-100010.png" alt=""></p><p>2.自动使用静态检测方法<br>   下图 默认是‘NO’,把Debug模式下改为‘Yes’</p><pre><code>![](/img/WX20180502-100153.png)</code></pre><h3 id="动态检测工具"><a href="#动态检测工具" class="headerlink" title="动态检测工具"></a>动态检测工具</h3><ol><li><p>control + shift + I<br> 或者点击</p><p> <img src="/img/WX20180502-100302.png" alt=""></p></li></ol><h3 id="析构方法"><a href="#析构方法" class="headerlink" title="析构方法"></a>析构方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (void)dealloc &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">///Swift中</span><br><span class="line">deinit &#123;</span><br><span class="line">        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="第三方检测工具-MLeaksFinder"><a href="#第三方检测工具-MLeaksFinder" class="headerlink" title="第三方检测工具 MLeaksFinder"></a>第三方检测工具 MLeaksFinder</h3><p>pod ‘MLeaksFinder’</p><p>pod安装下不需要引入任何头文件</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Swift中的内存泄漏</title>
       <link href="/2015/04/26/Swift%E4%B8%AD%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/"/>
       <url>/2015/04/26/Swift%E4%B8%AD%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/</url>
